@@ -1,12 +1,14 @@
-package com.example.orderfood
+package com.example.orderfood.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.FrameLayout
 import androidx.fragment.app.Fragment
+import com.example.orderfood.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var bottomNavBar: BottomNavigationView
     private lateinit var frameContainer: FrameLayout

@@ -1,0 +1,26 @@
+package com.example.orderfood.models
+
+import com.google.gson.annotations.SerializedName
+
+data class Result(
+    @SerializedName("cheap")
+    val cheap: Boolean,
+    @SerializedName("dairyFree")
+    val dairyFree: Boolean,
+    @SerializedName("extendedIngredients")
+    val extendedIngredients: List<ExtendedIngredient>,
+    @SerializedName("glutenFree")
+    val glutenFree: Boolean,
+    @SerializedName("id")
+    val id: Int,
+    @SerializedName("image")
+    val image: String,
+    @SerializedName("sourceUrl")
+    val sourceUrl: String,
+    @SerializedName("summary")
+    val summary: String,
+    @SerializedName("title")
+    val title: String,
+    @SerializedName("vegan")
+    val vegan: Boolean
+)
